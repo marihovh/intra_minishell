@@ -15,10 +15,8 @@
 t_token	*token_1(char **str)
 {
 	char	*chunk;
-	int		i;
 	t_token	*new;
 
-	i = 0;
 	chunk = *str;
 	while (*str && *str[0] == ' ')
 		(*str)++;
@@ -30,10 +28,8 @@ t_token	*token_1(char **str)
 t_token	*token_2(char **str)
 {
 	char	*chunk;
-	int		i;
 	t_token	*new;
 
-	i = 0;
 	chunk = *str;
 	while (*str && ft_isprint(*str[0]) && *str[0] != '|' \
 		&& *str[0] != '>' && *str[0] != '<' && *str[0] != 39 && *str[0] != 34)

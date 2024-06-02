@@ -23,7 +23,7 @@ obj/%.o : src/%.c obj/marker readline minishell.h
 	$(CC) $(CFLAGS) $(INCLUDES) -c $< -o $@
 
 $(NAME) : $(OBJ) readline $(LIBFT)
-	$(CC) $(CFLAGS) $(OBJ) $(LIBFT) $(INCLUDES) -o $(NAME) $(LINKERS)
+	@$(CC) $(CFLAGS) $(OBJ) $(LIBFT) $(INCLUDES) -o $(NAME) $(LINKERS)
 
 clean:
 	@make -C libft fclean

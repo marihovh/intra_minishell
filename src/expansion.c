@@ -14,9 +14,6 @@
 
 char	*if_env(char *str, t_envies *env)
 {
-	int	pid;
-
-	pid = getpid();
 	if (*str == '\0')
 		return (ft_strdup("$"));
 	if (*str == '/')

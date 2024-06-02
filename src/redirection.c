@@ -20,15 +20,12 @@ int	for_heredoc_helper(void)
 
 int	waiting(int pid, int status, char *filename)
 {
-	int	ret;
-
 	waitpid(pid, &status, 0);
 	if (WIFSIGNALED(status))
 	{
 		if (WTERMSIG((status)) == SIGINT)
 			write(1, "\n", 1);
 		free(filename);
-		ret = -2;
 	}
 	foo(1);
 	return (0);

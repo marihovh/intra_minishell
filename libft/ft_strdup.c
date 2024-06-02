@@ -14,11 +14,9 @@
 
 char	*ft_strdup(const char *s1)
 {
-	int		i;
 	int		len;
 	char	*ptr;
 
-	i = 0;
 	if (!s1)
 		return (NULL);
 	len = ft_strlen(s1) + 1;

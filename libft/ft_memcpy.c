@@ -14,11 +14,9 @@
 
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
-	size_t			i;
 	unsigned char	*str1;
 	unsigned char	*str2;
 
-	i = 0;
 	str1 = (unsigned char *)dest;
 	str2 = (unsigned char *)src;
 	while (n--)
